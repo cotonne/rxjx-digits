@@ -18,5 +18,8 @@ export class ClockService {
   public tick(): Observable<PIN> {
     // TODO : Implement me!
     throw new Error('Implement me!');
+
+    // Tip 1: Do you know that an function interval exists in RxJs?
+    // Tip 2: Maybe you can test a intToTick = number => PIN
   }
 }

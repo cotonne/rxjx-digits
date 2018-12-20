@@ -20,6 +20,9 @@ export class DigitComponent implements OnInit {
 
   ngOnInit() {
     // TODO : Implement me!
+
+    // Tip 1: Maybe you can test a function display: PINS => LCD_SEGMENT?
+    // Tip 2: Maybe you can test seven functions display: PINS => boolean?
   }
 
 }

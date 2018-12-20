@@ -1,12 +1,23 @@
 # RxjxDigit
 
+## TL;DR
+
+```bash
+ $ npm install
+ $ ng serve
+```
+
+And look for **TODO** and `throw new Error('Implement me')`
+
+## Description
+
 This project is to let you discover and understand how RxJS and Angular works. It aims also to make you produce quality code
 (aka. testable and maintenable code).
 
 At the end of this session, you will understand how :
  - RxJS works
  - RxJS can communicate with Angular
- - business logic can be separated from the technical framework 
+ - Business logic can be separated from the technical framework 
 
 ## The Kata
 
