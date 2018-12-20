@@ -1,0 +1,72 @@
+/* Reset */
+@color-counter: #6b56c0;
+@color-mem: #51c092;
+@color-dark: #a53125;
+@speed: "0.25s";
+@transition: all;
+
+.button {
+  display: inline-flex;
+  background-color: @color-counter;
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  margin: 5px;
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+  transition: @transition;
+
+  span,
+  .icon {
+    display: block;
+    height: 100%;
+    text-align: center;
+    top: 0;
+  }
+
+  span {
+    width: 100%;
+    line-height: inherit;
+    font-size: 22px;
+    text-transform: uppercase;
+    left: 0;
+    transition: @transition;
+
+    &:after {
+      content: '';
+      background-color: @color-dark;
+      width: 2px;
+      height: 70%;
+      position: absolute;
+      top: 15%;
+      right: -1px;
+    }
+  }
+
+  .icon {
+    width: 28%;
+    right: 0;
+    transition: @transition;
+
+    .fa {
+      font-size: 30px;
+      vertical-align: middle;
+      //transition: @transition, height #{$speed} ease;
+    }
+
+    .fa-remove {
+      height: 36px;
+    }
+
+    .fa-check {
+      display: none;
+    }
+  }
+}
