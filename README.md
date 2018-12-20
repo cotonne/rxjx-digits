@@ -39,6 +39,19 @@ You need to
  - display the content of the memory when the switch button is pressed
  - reset the board when the reset button is pressed
  
+## Where to start?
+
+ - If you want to do testing, the easiest way is to have an outside-in approach,
+starting from the LCD display and finishing with the clock, adding tests and features. 
+You should not have to create a lot of tests involving Observable or Angular elements.
+Observables or Angular should be only tested to check that components are "connected"
+one to each other. You should try to test as many things as possible with simple unit
+tests. 
+
+ - If you want to discover more the framework, you can start from the clock and try to make
+ things works. Try to explore the Angular and RxJS frameworks to understand how everything
+ works and if you can find a simpler or cleaner way to do it. 
+ 
 ## Useful ressources
 
  - [RxMarbles](http://rxmarbles.com/)
