@@ -24,3 +24,7 @@ export class CounterService {
   }
 
 }
+
+export function counting(pins: PINS) {
+  return pins;
+}

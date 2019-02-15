@@ -1,25 +1,25 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, TestBed} from '@angular/core/testing';
 
-import { DigitComponent } from './digit.component';
+import {DigitComponent} from './digit.component';
+import {ResetComponent} from '../../../button/reset/reset/reset.component';
+import {SwitchComponent} from '../../../button/switch/switch/switch.component';
 
 describe('DigitComponent', () => {
-  let component: DigitComponent;
-  let fixture: ComponentFixture<DigitComponent>;
-
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DigitComponent ]
+      declarations: [
+        DigitComponent,
+        ResetComponent,
+        SwitchComponent
+      ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(DigitComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
   it('should create', () => {
+    const fixture = TestBed.createComponent(DigitComponent);
+    const component = fixture.debugElement.componentInstance;
+    fixture.detectChanges();
     expect(component).toBeTruthy();
   });
 });

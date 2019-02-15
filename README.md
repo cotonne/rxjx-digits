@@ -41,6 +41,13 @@ You need to
  
 ## Where to start?
 
+ - Try `npm run test:unit`. One test should fail. You should try to test business logic in 
+   unit tests. 
+
+ - Try `npm run test:angular`. Two tests should fail. Try to fix them. You may need to open 
+   [http://localhost:9876](http:localhost:9876), as Angular uses Karma as a test runner.
+   You should try to do integration tests, checking that components are correctly connected.
+   
  - If you want to do testing, the easiest way is to have an outside-in approach,
 starting from the LCD display and finishing with the clock, adding tests and features. 
 You should not have to create a lot of tests involving Observable or Angular elements.

@@ -1,6 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import {DigitComponent} from './lcd/digit/digit/digit.component';
+import {ResetComponent} from './button/reset/reset/reset.component';
+import {SwitchComponent} from './button/switch/switch/switch.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,7 +12,10 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        DigitComponent,
+        ResetComponent,
+        SwitchComponent
       ],
     }).compileComponents();
   }));

@@ -1,4 +1,4 @@
-import {CounterService} from './counter.service';
+import {CounterService, PIN} from './counter.service';
 import {ClockService} from '../clock/clock.service';
 import {of} from 'rxjs';
 import {TestBed} from '@angular/core/testing';
@@ -23,8 +23,8 @@ describe('CounterService', () => {
 
     const service: CounterService = TestBed.get(CounterService);
 
-    service.memory$().subscribe((p) =>
-      expect(p as Array).toEqual([1, 0, 0, 0])
+    service.memory$.subscribe((p) =>
+      expect(p as Array<PIN>).toEqual([1, 0, 0, 0])
     );
   });
 });
