@@ -14,7 +14,7 @@ describe('CounterService', () => {
   //
   // it('should be created', () => {
   //   const service: CounterService = TestBed.get(CounterService);
-  //   expect(service).toBeng Truthy();
+  //   expect(service).toBeTruthy();
   // });
 
   it('should increase by one after one clock cycle', () => {
